@@ -1,10 +1,9 @@
-import Incomplete from "../Incomplete/Incomplete";
-
+import Task from "../Task/Task";
 
 const Home = () => {
   return (
     <div>
-      <Incomplete/>
+      <Task />
     </div>
   );
 };
