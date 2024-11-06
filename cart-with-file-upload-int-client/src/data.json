@@ -1,0 +1,835 @@
+[
+  {
+    "id": 1,
+    "client": {
+      "name": "Tech Solutions",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "John Doe",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Frontend Developer working on UI design updates."
+    },
+    "stats": {
+      "note_count": 10,
+      "view_user_count": 200,
+      "views": [
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" },
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }
+      ],
+      "comment_count": 8,
+      "file_count": []
+    },
+    "date": "2024-11-06",
+    "category": "to_do"
+  },
+  {
+    "id": 2,
+    "client": {
+      "name": "Market Insights",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Emily Brown",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Marketing specialist planning new campaign strategies."
+    },
+    "stats": {
+      "note_count": 13,
+      "view_user_count": 180,
+      "views": [
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" },
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }
+      ],
+      "comment_count": 10,
+      "file_count": []
+    },
+    "date": "2024-11-05",
+    "category": "to_do"
+  },
+  {
+    "id": 3,
+    "client": {
+      "name": "NextGen Solutions",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "James White",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Project Manager overseeing software development cycles."
+    },
+    "stats": {
+      "note_count": 22,
+      "view_user_count": 260,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 15,
+      "file_count": []
+    },
+    "date": "2024-11-04",
+    "category": "to_do"
+  },
+  {
+    "id": 4,
+    "client": {
+      "name": "Creative Labs",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Alice Johnson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "UX Designer improving user experience for e-commerce clients."
+    },
+    "stats": {
+      "note_count": 30,
+      "view_user_count": 390,
+      "views": [
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" },
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }
+      ],
+      "comment_count": 20,
+      "file_count": []
+    },
+    "date": "2024-11-03",
+    "category": "to_do"
+  },
+  {
+    "id": 5,
+    "client": {
+      "name": "Digital Waves",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Oliver Lee",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Data analyst working on customer segmentation analysis."
+    },
+    "stats": {
+      "note_count": 16,
+      "view_user_count": 150,
+      "views": [
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" },
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }
+      ],
+      "comment_count": 6,
+      "file_count": []
+    },
+    "date": "2024-11-02",
+    "category": "to_do"
+  },
+
+  {
+    "id": 6,
+    "client": {
+      "name": "Innovate Solutions",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Sarah Davis",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Content writer focused on tech industry trends."
+    },
+    "stats": {
+      "note_count": 40,
+      "view_user_count": 300,
+      "views": [
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" },
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }
+      ],
+      "comment_count": 12,
+      "file_count": []
+    },
+    "date": "2024-11-01",
+    "category": "to_do"
+  },
+  {
+    "id": 7,
+    "client": {
+      "name": "Bright Future",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Michael Evans",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "AI Engineer implementing new model optimizations."
+    },
+    "stats": {
+      "note_count": 25,
+      "view_user_count": 520,
+      "views": [
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" },
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }
+      ],
+      "comment_count": 15,
+      "file_count": []
+    },
+    "date": "2024-10-31",
+    "category": "to_do"
+  },
+
+  {
+    "id": 1,
+    "client": {
+      "name": "SkyTech",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Emma Brown",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Fullstack developer working on SaaS solutions."
+    },
+    "stats": {
+      "note_count": 28,
+      "view_user_count": 400,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 22,
+      "file_count": []
+    },
+    "date": "2024-10-30",
+    "category": "incomplete"
+  },
+  {
+    "id": 2,
+    "client": {
+      "name": "Green Energy Corp",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Lucas Kim",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Environmental scientist analyzing carbon emissions data."
+    },
+    "stats": {
+      "note_count": 18,
+      "view_user_count": 170,
+      "views": [
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" },
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }
+      ],
+      "comment_count": 13,
+      "file_count": []
+    },
+    "date": "2024-10-29",
+    "category": "incomplete"
+  },
+  {
+    "id": 3,
+    "client": {
+      "name": "Urban Dev",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Sophia Lewis",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Urban planner researching sustainable city infrastructure."
+    },
+    "stats": {
+      "note_count": 12,
+      "view_user_count": 220,
+      "views": [
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" },
+        { "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }
+      ],
+      "comment_count": 7,
+      "file_count": []
+    },
+    "date": "2024-10-28",
+    "category": "incomplete"
+  },
+
+  {
+    "id": 4,
+    "client": {
+      "name": "Eco Solutions",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Liam Martinez",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Researcher analyzing renewable energy sources."
+    },
+    "stats": {
+      "note_count": 35,
+      "view_user_count": 450,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 10,
+      "file_count": []
+    },
+    "date": "2024-10-27",
+    "category": "incomplete"
+  },
+  {
+    "id": 5,
+    "client": {
+      "name": "AI Experts",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Zoe Robinson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "AI researcher focusing on ethical AI implementations."
+    },
+    "stats": {
+      "note_count": 30,
+      "view_user_count": 320,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 14,
+      "file_count": []
+    },
+    "date": "2024-10-26",
+    "category": "incomplete"
+  },
+  {
+    "id": 6,
+    "client": {
+      "name": "Quantum Tech",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Mason Clark",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Quantum computing specialist testing new algorithms."
+    },
+    "stats": {
+      "note_count": 25,
+      "view_user_count": 270,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 18,
+      "file_count": []
+    },
+    "date": "2024-10-25",
+    "category": "incomplete"
+  },
+  {
+    "id": 7,
+    "client": {
+      "name": "Data World",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Grace Thompson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Big Data Engineer developing new data pipelines."
+    },
+    "stats": {
+      "note_count": 16,
+      "view_user_count": 190,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 8,
+      "file_count": []
+    },
+    "date": "2024-10-24",
+    "category": "incomplete"
+  },
+
+  {
+    "id": 1,
+    "client": {
+      "name": "Future Vision",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Ella Walker",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "AR Developer enhancing AR experiences for education."
+    },
+    "stats": {
+      "note_count": 20,
+      "view_user_count": 210,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 6,
+      "file_count": []
+    },
+    "date": "2024-10-23",
+    "category": "doing"
+  },
+
+  {
+    "id": 2,
+    "client": {
+      "name": "Biz Consultancy",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Lily Wilson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Business consultant specializing in strategy development."
+    },
+    "stats": {
+      "note_count": 50,
+      "view_user_count": 600,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 18,
+      "file_count": []
+    },
+    "date": "2024-10-22",
+    "category": "doing"
+  },
+  {
+    "id": 3,
+    "client": {
+      "name": "Smart Solutions",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Henry Anderson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Network engineer optimizing secure connections."
+    },
+    "stats": {
+      "note_count": 15,
+      "view_user_count": 350,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 10,
+      "file_count": []
+    },
+    "date": "2024-10-21",
+    "category": "doing"
+  },
+  {
+    "id": 4,
+    "client": {
+      "name": "Healthy Living",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Isabella King",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Nutritionist creating wellness programs for corporate clients."
+    },
+    "stats": {
+      "note_count": 28,
+      "view_user_count": 210,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 12,
+      "file_count": []
+    },
+    "date": "2024-10-20",
+    "category": "doing"
+  },
+  {
+    "id": 5,
+    "client": {
+      "name": "OptiView",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Daniel Scott",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Videographer creating content for online learning platforms."
+    },
+    "stats": {
+      "note_count": 45,
+      "view_user_count": 410,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 20,
+      "file_count": []
+    },
+    "date": "2024-10-19",
+    "category": "doing"
+  },
+  {
+    "id": 6,
+    "client": {
+      "name": "BluePrint Designs",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Victoria Young",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Architect focused on sustainable building designs."
+    },
+    "stats": {
+      "note_count": 32,
+      "view_user_count": 290,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 14,
+      "file_count": []
+    },
+    "date": "2024-10-18",
+    "category": "doing"
+  },
+
+  {
+    "id": 1,
+    "client": {
+      "name": "Future Vision",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Ella Walker",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "AR Developer enhancing AR experiences for education."
+    },
+    "stats": {
+      "note_count": 20,
+      "view_user_count": 210,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 6,
+      "file_count": []
+    },
+    "date": "2024-10-23",
+    "category": "under_review"
+  },
+
+  {
+    "id": 2,
+    "client": {
+      "name": "Biz Consultancy",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Lily Wilson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Business consultant specializing in strategy development."
+    },
+    "stats": {
+      "note_count": 50,
+      "view_user_count": 600,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 18,
+      "file_count": []
+    },
+    "date": "2024-10-22",
+    "category": "under_review"
+  },
+  {
+    "id": 3,
+    "client": {
+      "name": "Smart Solutions",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Henry Anderson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Network engineer optimizing secure connections."
+    },
+    "stats": {
+      "note_count": 15,
+      "view_user_count": 350,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 10,
+      "file_count": []
+    },
+    "date": "2024-10-21",
+    "category": "under_review"
+  },
+  {
+    "id": 4,
+    "client": {
+      "name": "Healthy Living",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Isabella King",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Nutritionist creating wellness programs for corporate clients."
+    },
+    "stats": {
+      "note_count": 28,
+      "view_user_count": 210,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 12,
+      "file_count": []
+    },
+    "date": "2024-10-20",
+    "category": "under_review"
+  },
+  {
+    "id": 5,
+    "client": {
+      "name": "OptiView",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Daniel Scott",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Videographer creating content for online learning platforms."
+    },
+    "stats": {
+      "note_count": 45,
+      "view_user_count": 410,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 20,
+      "file_count": []
+    },
+    "date": "2024-10-19",
+    "category": "under_review"
+  },
+  {
+    "id": 6,
+    "client": {
+      "name": "BluePrint Designs",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Victoria Young",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Architect focused on sustainable building designs."
+    },
+    "stats": {
+      "note_count": 32,
+      "view_user_count": 290,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 14,
+      "file_count": []
+    },
+    "date": "2024-10-18",
+    "category": "under_review"
+  },
+
+  {
+    "id": 1,
+    "client": {
+      "name": "Future Vision",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Ella Walker",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "AR Developer enhancing AR experiences for education."
+    },
+    "stats": {
+      "note_count": 20,
+      "view_user_count": 210,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 6,
+      "file_count": []
+    },
+    "date": "2024-10-23",
+    "category": "completed"
+  },
+
+  {
+    "id": 2,
+    "client": {
+      "name": "Biz Consultancy",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Lily Wilson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Business consultant specializing in strategy development."
+    },
+    "stats": {
+      "note_count": 50,
+      "view_user_count": 600,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 18,
+      "file_count": []
+    },
+    "date": "2024-10-22",
+    "category": "completed"
+  },
+  {
+    "id": 3,
+    "client": {
+      "name": "Smart Solutions",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Henry Anderson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Network engineer optimizing secure connections."
+    },
+    "stats": {
+      "note_count": 15,
+      "view_user_count": 350,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 10,
+      "file_count": []
+    },
+    "date": "2024-10-21",
+    "category": "completed"
+  },
+  {
+    "id": 4,
+    "client": {
+      "name": "Healthy Living",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Isabella King",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Nutritionist creating wellness programs for corporate clients."
+    },
+    "stats": {
+      "note_count": 28,
+      "view_user_count": 210,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 12,
+      "file_count": []
+    },
+    "date": "2024-10-20",
+    "category": "completed"
+  },
+  {
+    "id": 5,
+    "client": {
+      "name": "OptiView",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Daniel Scott",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Videographer creating content for online learning platforms."
+    },
+    "stats": {
+      "note_count": 45,
+      "view_user_count": 410,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 20,
+      "file_count": []
+    },
+    "date": "2024-10-19",
+    "category": "completed"
+  },
+  {
+    "id": 6,
+    "client": {
+      "name": "BluePrint Designs",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Victoria Young",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Architect focused on sustainable building designs."
+    },
+    "stats": {
+      "note_count": 32,
+      "view_user_count": 290,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 14,
+      "file_count": []
+    },
+    "date": "2024-10-18",
+    "category": "completed"
+  },
+
+  {
+    "id": 1,
+    "client": {
+      "name": "Future Vision",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Ella Walker",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "AR Developer enhancing AR experiences for education."
+    },
+    "stats": {
+      "note_count": 20,
+      "view_user_count": 210,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 6,
+      "file_count": []
+    },
+    "date": "2024-10-23",
+    "category": "finish"
+  },
+
+  {
+    "id": 2,
+    "client": {
+      "name": "Biz Consultancy",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Lily Wilson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Business consultant specializing in strategy development."
+    },
+    "stats": {
+      "note_count": 50,
+      "view_user_count": 600,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 18,
+      "file_count": []
+    },
+    "date": "2024-10-22",
+    "category": "finish"
+  },
+  {
+    "id": 3,
+    "client": {
+      "name": "Smart Solutions",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Henry Anderson",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Network engineer optimizing secure connections."
+    },
+    "stats": {
+      "note_count": 15,
+      "view_user_count": 350,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 10,
+      "file_count": []
+    },
+    "date": "2024-10-21",
+    "category": "finish"
+  },
+  {
+    "id": 4,
+    "client": {
+      "name": "Healthy Living",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Isabella King",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Nutritionist creating wellness programs for corporate clients."
+    },
+    "stats": {
+      "note_count": 28,
+      "view_user_count": 210,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 12,
+      "file_count": []
+    },
+    "date": "2024-10-20",
+    "category": "finish"
+  },
+  {
+    "id": 5,
+    "client": {
+      "name": "OptiView",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Daniel Scott",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Videographer creating content for online learning platforms."
+    },
+    "stats": {
+      "note_count": 45,
+      "view_user_count": 410,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 20,
+      "file_count": []
+    },
+    "date": "2024-10-19",
+    "category": "finish"
+  },
+  {
+    "id": 6,
+    "client": {
+      "name": "BluePrint Designs",
+      "image_url": "https://i.ibb.co.com/HpNRYW6/player-1.png"
+    },
+    "user": {
+      "name": "Victoria Young",
+      "image_url": "https://i.ibb.co.com/NK6FGdk/player-3.png",
+      "about": "Architect focused on sustainable building designs."
+    },
+    "stats": {
+      "note_count": 32,
+      "view_user_count": 290,
+      "views": [{ "image_url": "https://i.ibb.co.com/Vj7t5ng/player-5.png" }],
+      "comment_count": 14,
+      "file_count": []
+    },
+    "date": "2024-10-18",
+    "category": "finish"
+  }
+]
