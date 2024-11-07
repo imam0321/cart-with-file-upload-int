@@ -16,7 +16,7 @@ const Task = () => {
         "Data loading...."
       ) : (
         <>
-          <div className="flex overflow-x-scroll scrollbar-thin scrollbar-thumb-blue-600 scrollbar-track-gray-200 my-16 mx-4">
+          <div className="flex overflow-x-scroll scrollbar-thin scrollbar-thumb-blue-600 scrollbar-track-gray-200 my-12 mx-4">
             <TaskCategory
               items={incomplete}
               title="Incomplete"

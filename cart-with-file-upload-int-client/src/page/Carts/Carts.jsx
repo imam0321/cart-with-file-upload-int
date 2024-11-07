@@ -38,7 +38,7 @@ const Carts = ({ items }) => {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/upload/${currentItemId}`,
+        `${import.meta.env.VITE_BASE_URL}/upload/${currentItemId}`,
         formData,
         {
           headers: {

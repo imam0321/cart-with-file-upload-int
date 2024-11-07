@@ -19,7 +19,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage });
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: process.env.BASE_URL,
   optionsSuccessStatus: 200,
 };
 

@@ -2,7 +2,7 @@ import Task from "../Task/Task";
 
 const Home = () => {
   return (
-    <div>
+    <div className="max-h-screen">
       <Task />
     </div>
   );
