@@ -2,6 +2,9 @@ const express = require("express");
 require("dotenv").config();
 const cors = require("cors");
 const { MongoClient, ServerApiVersion } = require("mongodb");
+const multer = require("multer");
+
+
 const app = express();
 const port = process.env.PORT || 5000;
 
@@ -12,6 +15,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+
 
 const uri = `mongodb+srv://${process.env.DB_NAME}:${process.env.DB_PASS}@cluster0.0hgquea.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -30,6 +34,7 @@ async function run() {
       const result = await tasksCollection.find().toArray();
       res.send(result);
     });
+    
 
     await client.connect();
     // Send a ping to confirm a successful connection

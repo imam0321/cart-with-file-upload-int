@@ -1,3 +1,5 @@
+import { useState } from "react";
+import axios from "axios";
 import {
   FaCodepen,
   FaRegComments,
@@ -7,6 +9,22 @@ import {
 } from "react-icons/fa";
 
 const Carts = ({ items }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [file, setFile] = useState(null);
+
+  const handleFileLink = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setFile(null);
+  };
+
+  const handleFileChange = (e) => {
+    setFile(e.target.files[0]);
+  };
+
   return (
     <div>
       {items.map((item) => (
@@ -51,7 +69,7 @@ const Carts = ({ items }) => {
                     key={index}
                     src={img.image_url}
                     alt="view"
-                    className="w-8 h-8 rounded-full"
+                    className="w-6 h-6 rounded-full"
                   />
                 ))}
 
@@ -61,7 +79,12 @@ const Carts = ({ items }) => {
                 <FaRegComments />
                 <span>{item.stats.comment_count}</span>
               </div>
-              <div className="flex items-center gap-1">
+              <div
+                onClick={() => {
+                  handleFileLink();
+                }}
+                className="flex items-center gap-1"
+              >
                 <FaLink />
                 <span>{item.stats.file_count.length}</span>
               </div>
@@ -73,6 +96,27 @@ const Carts = ({ items }) => {
           </div>
         </div>
       ))}
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-lg">
+            <h2 className="text-xl font-semibold mb-4">Upload your File</h2>
+            <input type="file" onChange={handleFileChange} />
+            <div className="mt-4">
+              <button className="bg-blue-500 text-white px-4 py-2 rounded-md mt-2">
+                Upload
+              </button>
+              <button
+                onClick={closeModal}
+                className="bg-red-500 text-white px-4 py-2 rounded-md mt-2 ml-2"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
