@@ -7,22 +7,50 @@ import {
   FaLink,
   FaClipboardList,
 } from "react-icons/fa";
+import FileUploadModal from "../Share/FileUploadModal/FileUploadModal";
+import useTasks from "../../hook/useTasks";
 
 const Carts = ({ items }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [file, setFile] = useState(null);
+  const [currentItemId, setCurrentItemId] = useState(null);
+  const [, , refetch] = useTasks();
 
-  const handleFileLink = () => {
+  const handleFileLink = (id) => {
+    setCurrentItemId(id);
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
     setIsModalOpen(false);
     setFile(null);
+    setCurrentItemId(null);
   };
 
-  const handleFileChange = (e) => {
-    setFile(e.target.files[0]);
+  const handleFileUpload = async () => {
+    if (!file || !currentItemId) {
+      console.error("No file selected for upload or item ID is missing.");
+      return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+      const response = await axios.post(
+        `http://localhost:5000/upload/${currentItemId}`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      refetch()
+      console.log("File uploaded successfully:", response.data);
+    } catch (error) {
+      console.error("Error uploading file:", error);
+    }
   };
 
   return (
@@ -81,7 +109,7 @@ const Carts = ({ items }) => {
               </div>
               <div
                 onClick={() => {
-                  handleFileLink();
+                  handleFileLink(item._id);
                 }}
                 className="flex items-center gap-1"
               >
@@ -98,25 +126,13 @@ const Carts = ({ items }) => {
       ))}
 
       {/* Modal */}
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] max-w-lg">
-            <h2 className="text-xl font-semibold mb-4">Upload your File</h2>
-            <input type="file" onChange={handleFileChange} />
-            <div className="mt-4">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-md mt-2">
-                Upload
-              </button>
-              <button
-                onClick={closeModal}
-                className="bg-red-500 text-white px-4 py-2 rounded-md mt-2 ml-2"
-              >
-                Close
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <FileUploadModal
+        isModalOpen={isModalOpen}
+        onClose={closeModal}
+        onFileChange={(e) => setFile(e.target.files[0])}
+        onFileUpload={handleFileUpload}
+        currentItemId={currentItemId}
+      />
     </div>
   );
 };

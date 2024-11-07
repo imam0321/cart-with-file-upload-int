@@ -9,6 +9,7 @@ const Task = () => {
   const underReview = tasks.filter((task) => task.category === "under_review");
   const completed = tasks.filter((task) => task.category === "completed");
   const finish = tasks.filter((task) => task.category === "finish");
+
   return (
     <>
       {loading ? (
