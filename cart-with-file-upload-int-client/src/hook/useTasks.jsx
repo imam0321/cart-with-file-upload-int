@@ -8,7 +8,7 @@ const useTasks = () => {
   } = useQuery({
     queryKey: ["tasks"],
     queryFn: async () => {
-      const res = await fetch("http://localhost:5000/tasks");
+      const res = await fetch("https://cart-with-file-upload-int-server.vercel.app/tasks");
       return res.json();
     },
   });

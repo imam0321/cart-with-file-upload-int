@@ -27,6 +27,15 @@ const Carts = ({ items }) => {
     setCurrentItemId(null);
   };
 
+   // Function to ensure URL has the correct 'https' protocol
+   const ensureProtocol = (url) => {
+    const parsedUrl = new URL(url);
+    if (parsedUrl.protocol !== 'https:') {
+      parsedUrl.protocol = 'https:';  // Set it to https if it is not
+    }
+    return parsedUrl.toString();
+  };
+
   const handleFileUpload = async () => {
     if (!file || !currentItemId) {
       console.error("No file selected for upload or item ID is missing.");
@@ -42,14 +51,15 @@ const Carts = ({ items }) => {
     try {
       // Uploading file to Cloudinary
       const cloudinaryRes = await axios.post(
-        `https://api.cloudinary.com/v1_1/${import.meta.env.VITE_CLOUD_NAME}/upload`,
+        import.meta.env.VITE_CLOUD_URL,
         formData
       );
 
-      const fileUrl = cloudinaryRes.data.secure_url; // Generated URL from Cloudinary
+      const fileUrl = ensureProtocol(cloudinaryRes.data.secure_url); 
 
       // Sending the file URL to backend to save in MongoDB
-      await axios.post(`http://localhost:5000/upload/${currentItemId}`, {
+      // https://cart-with-file-upload-int-server.vercel.app
+      await axios.post(`https://cart-with-file-upload-int-server.vercel.app/upload/${currentItemId}`, {
         url: fileUrl,
         filename: file.name,
       });

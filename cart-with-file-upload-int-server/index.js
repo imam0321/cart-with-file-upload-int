@@ -8,6 +8,7 @@ const port = process.env.PORT || 5000;
 
 const corsOptions = {
   origin: "https://cart-with-file-upload-int-client.vercel.app",
+  // origin: "http://localhost:5173",
   optionsSuccessStatus: 200,
 };
 
