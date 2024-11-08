@@ -8,7 +8,7 @@ const useTasks = () => {
   } = useQuery({
     queryKey: ["tasks"],
     queryFn: async () => {
-      const res = await fetch(`${import.meta.env.VITE_BASE_URL}/tasks`);
+      const res = await fetch("http://localhost:5000/tasks");
       return res.json();
     },
   });

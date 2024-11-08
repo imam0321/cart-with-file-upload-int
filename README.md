@@ -8,9 +8,9 @@
 - React Icons
 - Axios
 - Tanstack Query
+- Cloudinary
 
 # Backend:
 - Node.js
 - Express.js
 - MongoDB
-- Multer

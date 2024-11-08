@@ -35,21 +35,30 @@ const Carts = ({ items }) => {
 
     const formData = new FormData();
     formData.append("file", file);
+    formData.append("upload_preset", import.meta.env.VITE_UPLOAD_PRESET);
+    formData.append("cloud_name", import.meta.env.VITE_CLOUD_NAME);
+    formData.append("resource_type", "auto"); 
 
     try {
-      const response = await axios.post(
-        `${import.meta.env.VITE_BASE_URL}/upload/${currentItemId}`,
-        formData,
-        {
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        }
+      // Uploading file to Cloudinary
+      const cloudinaryRes = await axios.post(
+        `https://api.cloudinary.com/v1_1/${import.meta.env.VITE_CLOUD_NAME}/upload`,
+        formData
       );
-      refetch()
-      console.log("File uploaded successfully:", response.data);
+
+      const fileUrl = cloudinaryRes.data.secure_url; // Generated URL from Cloudinary
+
+      // Sending the file URL to backend to save in MongoDB
+      await axios.post(`http://localhost:5000/upload/${currentItemId}`, {
+        url: fileUrl,
+        filename: file.name,
+      });
+
+      alert("File uploaded successfully!");
+      refetch();
     } catch (error) {
-      console.error("Error uploading file:", error);
+      console.error("Upload failed:", error);
+      alert("File upload failed");
     }
   };
 
